@@ -24,7 +24,7 @@ app = Flask(__name__)
 api = Api(app)
 
 parser = reqparse.RequestParser()
-parser.add_argument('format', type=str, default = "json")
+parser.add_argument('format', type=str, default = "csv")
 parser.add_argument('date', type=int, default = None)
 
 
